@@ -1,0 +1,46 @@
+.page-header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    img {
+      width: 300px;
+      height: 65px;
+    }
+  }
+}
+
+.main-nav {
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    //letter-spacing: 1px;
+    cursor: pointer;
+    &-link {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+.menu--toggle {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+

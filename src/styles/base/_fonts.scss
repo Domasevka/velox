@@ -1,0 +1,22 @@
+$src-font-open-sans: '/fonts';
+@each $font-folder, $file-name, $font-weight, $font-style in
+                (OpenSansLight, opensanslight, 300, normal),
+                (OpenSansLightItalic, opensanslightitalic, 300, italic),
+                (OpenSans, opensans, 400, normal),
+                (OpenSansItalic, opensansitalic, 400, italic),
+                (OpenSansSemiBold, opensanssemibold, 600, normal),
+                (OpenSansSemiBoldItalic, opensanssemibolditalic, 600, italic),
+                (OpenSansBold, opensansbold, 700, normal),
+                (OpenSansBoldItalic, opensansbolditalic, 700, italic),
+                (OpenSansExtraBold, opensansextrabold, 800, normal),
+                (OpenSansExtraBoldItalic, opensansextrabolditalic, 800, italic), {
+  @font-face {
+    font-family: OpenSans;
+    font-weight: $font-weight;
+    font-style: $font-style;
+
+    src: url('#{$src-font-open-sans}/#{$font-folder}/#{$file-name}.woff') format('woff'),
+    url('#{$src-font-open-sans}/#{$font-folder}/#{$file-name}.woff2') format('woff2'),
+    url('#{$src-font-open-sans}/#{$font-folder}/#{$file-name}.ttf') format('truetype');
+  }
+}
