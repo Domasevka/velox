@@ -1,0 +1,39 @@
+.services {
+  margin: 70px 0 90px;
+  &__header {
+    text-align: center;
+    h2 {
+      position: relative;
+      text-transform: uppercase;
+    }
+  }
+  &__list {
+    display: flex;
+    margin-top: 127px;
+  }
+  &__item {
+    text-align: center;
+    padding: 0 15px;
+    i {
+      cursor: default;
+      background-color: #37c0fb;
+      color: #fff;
+      border-radius: 100%;
+      display: inline-block;
+      width: 5em;
+      height: 5em;
+      line-height: 5em;
+      margin: 0 0 12px 0;
+    }
+
+    h6 {
+      text-transform: uppercase;
+      font-family: $font-family;
+    }
+    p {
+      margin-top: 29px;
+      line-height: 1.3;
+    }
+  }
+
+}

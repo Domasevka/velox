@@ -7,125 +7,129 @@ html(lang='ru')
     link(rel='stylesheet', href='css/style.css')
   body
     header.page-header
-      .container
-        .page-header__container
-          a.page-header__logo(href="#")
-            img(src="src/img/logo.svg" alt="Velox")
-          nav.main-nav.main-nav--closed
-            .main-nav__wrapper
-              ul.main-nav__list
-                li.main-nav__item.main-nav__item--active
-                  a.main-nav__item-link(href="#") Services
-                li.main-nav__item
-                  a.main-nav__item-link(href="#") Portofolio
-                li.main-nav__item
-                  a.main-nav__item-link(href="#") Testimonials
-                li.main-nav__item
-                  a.main-nav__item-link(href="#") About
-                li.main-nav__item
-                  a.main-nav__item-link(href="#") Contact
-          button.menu--toggle(type="button") Открыть меню
-            //.side-menu
-                .menu--toggle
-                  span
-                  span
-                  span
-                .menu--toggle-cross &#735;
-                ul.side-menu__list
-                  li.side-menu__item
-                    a.side-menu__item-link(href="#") Services
-                  li.side-menu__item
-                    a.side-menu__item-link(href="#") Portofolio
-                  li.side-menu__item
-                    a.side-menu__item-link(href="#") Testimonials
-                  li.side-menu__item
-                    a.side-menu__item-link(href="#") About
-                  li.side-menu__item
-                    a.side-menu__item-link(href="#") Contact
-        h1 Velox One Page Template
-        h2 Clean, Responsive, customizable one page template
-        a(href="#").page-header__btn.btn Get Started Now
+      .page-header__banner
+        .container
+          .page-header__container
+            a.page-header__logo(href="#")
+              img(src="src/img/logo.png" width="130" height="38" alt="Velox")
+            nav.main-nav.main-nav--closed
+              .main-nav__wrapper
+                ul.main-nav__list
+                  li.main-nav__item.main-nav__item--active
+                    a.main-nav__item-link(href="#") Services
+                  li.main-nav__item
+                    a.main-nav__item-link(href="#") Portofolio
+                  li.main-nav__item
+                    a.main-nav__item-link(href="#") Testimonials
+                  li.main-nav__item
+                    a.main-nav__item-link(href="#") About
+                  li.main-nav__item
+                    a.main-nav__item-link(href="#") Contact
+            button.menu--toggle(type="button") Открыть меню
+              //.side-menu
+                  .menu--toggle
+                    span
+                    span
+                    span
+                  .menu--toggle-cross &#735;
+                  ul.side-menu__list
+                    li.side-menu__item
+                      a.side-menu__item-link(href="#") Services
+                    li.side-menu__item
+                      a.side-menu__item-link(href="#") Portfolio
+                    li.side-menu__item
+                      a.side-menu__item-link(href="#") Testimonials
+                    li.side-menu__item
+                      a.side-menu__item-link(href="#") About
+                    li.side-menu__item
+                      a.side-menu__item-link(href="#") Contact
+          .page-header__title
+            h1 Velox One Page Template
+            h3 Clean, Responsive, customizable one page template
+          .btn-group
+            a(href="#").page-header__btn.btn.btn_center.btn_md Get Started Now
     section.services
       .container
         header.services__header
-          h2.services__title Our services
+          h2.services__title.title_line Our services
         ul.services__list
-          li.products__item
+          li.services__item
             i.icon
-            h3 Logo design
+            h6 Logo design
             p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          li.products__item
+          li.services__item
             i.icon
-            h3 Web design
+            h6 Web design
             p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          li.products__item
+          li.services__item
             i.icon
-            h3 Branding
+            h6 Branding
             p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          li.products__item
+          li.services__item
             i.icon
-            h3 Illustrations
+            h6 Illustrations
             p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
     section.portfolio
-      .container
-        menu.portfolio__menu
-          ul.portfolio__list
-            li.portfolio__item.portfolio__item--active
-              a.portfolio__item-link(href="#") All
-            li.portfolio__item
-              a.portfolio__item-link(href="#") Illustrations
-            li.portfolio__item
-              a.portfolio__item-link(href="#") Logo
-            li.portfolio__item
-              a.portfolio__item-link(href="#") Branding
-            li.portfolio__item
-              a.portfolio__item-link(href="#") Web Design
-      header.portfolio__header
-          h2.portfolio__title Portfolio
-        .portfolio__row
-          .portfolio__col
-            a.portfolio__col-img(href="#")
-              img (src="src/img/img.png")
-              span.portfolio__col-title Agency - PSD Template
-          .portfolio__col
-            a.portfolio__col-img(href="#")
-              img (src="src/img/img.png")
-              span.portfolio__col-title Pure Vodka Branding
-          .portfolio__col
-            a.portfolio__col-img(href="#")
-              img (src="src/img/img.png")
-              span.portfolio__col-title Web Design
-        .portfolio__row
-          .portfolio__col
-            a.portfolio__col-img(href="#")
-              img (src="src/img/img.png")
-              span.portfolio__col-title Everest Logo
-          .portfolio__col
-            a.portfolio__col-img(href="#")
-              img (src="src/img/img.png")
-              span.portfolio__col-title Poster Design
-          .portfolio__col
-            a.portfolio__col-img(href="#")
-              img (src="src/img/img.png")
-              span.portfolio__col-title Illustration
-        a(href="#").portfolio__btn.btn Show more
+      .portfolio-wrap
+        .container
+          header.portfolio__header
+            h2.portfolio__title.title_line Portfolio
+          menu.portfolio__menu
+            ul.portfolio__list
+              li.portfolio__item.portfolio__item--active
+                a.portfolio__item-link(href="#") All
+              li.portfolio__item
+                a.portfolio__item-link(href="#") Illustrations
+              li.portfolio__item
+                a.portfolio__item-link(href="#") Logo
+              li.portfolio__item
+                a.portfolio__item-link(href="#") Branding
+              li.portfolio__item
+                a.portfolio__item-link(href="#") Web Design
+            .portfolio__cols
+              a.portfolio__col(href="#")
+                span.portfolio__col-img
+                img(src="src/img/img1.png")
+                span.portfolio__col-title Agency - PSD Template
+              a.portfolio__col(href="#")
+                span.portfolio__col-img
+                img(src="src/img/img.png")
+                span.portfolio__col-title Pure Vodka Branding
+              a.portfolio__col(href="#")
+                span.portfolio__col-img
+                img(src="src/img/img.png")
+                span.portfolio__col-title Web Design
+              a.portfolio__col(href="#")
+                span.portfolio__col-img
+                img(src="src/img/img.png")
+                span.portfolio__col-title Everest Logo
+              a.portfolio__col(href="#")
+                span.portfolio__col-img
+                img(src="src/img/img.png")
+                span.portfolio__col-title Poster Design
+              a.portfolio__col(href="#")
+                span.portfolio__col-img
+                img(src="src/img/img.png")
+                span.portfolio__col-title Illustration
+            .btn-group
+              a(href="#").portfolio__btn.btn.btn_center.btn_bg Show more
     section.brands
       .container
         header.brands__header
-          h2.brands__title Recent Brands we’ve worked with
+          h2.brands__title.title_line Recent Brands we’ve worked with
         ul.brands__list
           li.brands__item
             a.brands__item-link(href="#") Services
-              img (src="src/img/img.png")
+              img(src="src/img/img.png")
           li.brands__item
             a.brands__item-link(href="#") Services
-              img (src="src/img/img.png")
+              img(src="src/img/img.png")
           li.brands__item
             a.brands__item-link(href="#") Services
-              img (src="src/img/img.png")
+              img(src="src/img/img.png")
           li.brands__item
             a.brands__item-link(href="#") Services
-              img (src="src/img/img.png")
+              img(src="src/img/img.png")
     section.testimonials
       .container
         header.testimonials__header
@@ -134,17 +138,17 @@ html(lang='ru')
           .testimonials__items
             blockquote.testimonials__item.slider_item
               .testimonials__author-foto
-                img (src="src/img/img.png" alt="")
+                img(src="src/img/img.png" alt="")
               p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
               span Linda from example.com
             blockquote.testimonials__item.slider_item
               .testimonials__author-foto
-                img (src="src/img/img.png" alt="")
+                img(src="src/img/img.png" alt="")
               p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
               span Linda from example.com
             blockquote.testimonials__item.slider_item
               .testimonials__author-foto
-                img (src="src/img/img.png" alt="")
+                img(src="src/img/img.png" alt="")
               p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
               span Linda from example.com
             button.testimonials__prev(type="button")

@@ -1,9 +1,27 @@
-$color-main: #000;
+$site-width: 1170px;    // ширина сайта
+$gutter: 15px;
 
-$font-family: OpenSans, sans-serif;;
+$color-main: #000;
+$color-secondary: #fff;
+
+$btn-main-bg: #00a5ff;
+$btn-main-color: #fff;
+$btn-main-border: #00a5ff;
+//$color-success;
+//$color-success--darken;
+//$color-success--darken;
+
+//$gray--light: #BABABA;
+$gray: #a1a1a1;
+//$gray--dark: #585858;
+
+$font-family: OpenSans, sans-serif;
+$font: OpenSans, serif;
 
 $sm: 544px;     // Small screen / phone
 $md: 768px;     // Medium screen / tablet
 $lg: 992px;     // Large screen / desktop
 $xl: 1200px;    // Extra large screen desktop
 $xxl: 1440px;   // Wide desktop
+
+$breakpoint: 1170px;

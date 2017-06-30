@@ -2,5 +2,10 @@
 @import "variables";
 @import "base/reset";
 @import "base/grid";
+@import "mixins";
+@import "base/fonts";
+@import "base/typography";
 @import "blocks/main-nav";
-
+@import "blocks/services";
+@import "blocks/portfolio";
+@import "components/buttons";

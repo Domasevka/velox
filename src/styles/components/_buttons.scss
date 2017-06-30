@@ -1,0 +1,94 @@
+.btn {
+  @include transition;
+
+  display: inline-block;
+
+  background-color: $btn-main-bg;
+  color: $btn-main-color;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+
+  border-width: 1px;
+  border-color:  $btn-main-border;
+  border-radius: 40px;
+
+  letter-spacing: 2.5px;
+  word-spacing: 5px;
+  
+  font-size: 24px;
+  padding: 25px 50px;
+  &:not(:disabled):hover {
+    cursor: pointer;
+  }
+  &:active {
+    outline: none;
+  }
+  &-center {
+    margin: 0 auto;
+  }
+  &:disabled {
+    cursor: default;
+  }
+  &_center {
+    display: block;
+
+    margin: 0 auto;
+  }
+}
+
+/*.btn {
+  @include transition;
+
+  display: inline-block;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 2px;
+
+  &:not(:disabled):hover {
+    cursor: pointer;
+  }
+  &:active {
+    outline: none;
+  }
+  &:disabled {
+    cursor: default;
+  }
+  &--center {
+    margin: 0 auto;
+  }
+
+  &_center {
+    display: block;
+
+    margin: 0 auto;
+  }
+}*/
+
+.btn-group {
+  display: flex;
+  //justify-content: center;
+}
+
+// button medium size
+.btn_md {
+  @include font(24px, 500, 18px);
+  font-family: $font-family;
+
+  padding: 25px 50px;
+}
+
+.btn_bg {
+  @include font(24px, 500, 18px);
+  font-family: $font-family;
+  text-transform: uppercase;
+  padding: 25px 50px;
+}
+
+.btn_sm {
+  @include font(14px, 400, 14px);
+
+  padding: 17px 20px;
+}
