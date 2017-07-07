@@ -12,7 +12,10 @@ h2,
 .h2 {
   @include font(40px, 600, 1);
 
+  position: relative;
   color: #3c3c3a;
+  text-transform: uppercase;
+  padding-bottom: 28px;
 
   @media (max-width: 480px) {
     @include font(24px, 500, 36px);
