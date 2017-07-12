@@ -1,19 +1,27 @@
 $site-width: 1170px;    // ширина сайта
 $gutter: 15px;
 
-$color-main: #000;
+//$color-main: #00a5ff;
 $color-secondary: #fff;
 
-$btn-main-bg: #00a5ff;
+$color-success: #00a5ff;
+//$color-success--light: ;
+
+$btn-main-bg: $color-success;
 $btn-main-color: #fff;
-$btn-main-border: #00a5ff;
+$btn-main-border: $color-success;
+
 //$color-success;
 //$color-success--darken;
 //$color-success--darken;
 
-//$gray--light: #BABABA;
-$gray: #a1a1a1;
-//$gray--dark: #585858;
+
+//$gray--lightest: #f5f6f8;
+$gray--lighten: #f4f5f9;
+$gray--light: #f5f6f8;
+$gray: #999;
+$gray--dark: #3a3f4b;
+$gray--darken: #3b404c;
 
 $font-family: OpenSans, sans-serif;
 $font: OpenSans, serif;

@@ -5,6 +5,8 @@ html(lang='ru')
     title Velox
     meta(name='viewport', content='width=device-width,initial-scale=1')
     link(rel='stylesheet', href='css/style.css')
+    //link(href="styles/mislider.css" rel="stylesheet" type="text/css")
+
   body
     header.page-header
       .page-header__banner
@@ -137,81 +139,103 @@ html(lang='ru')
             a.brands__item-link(href="#") Services
               img(src="src/img/img.png")
     section.testimonials
-      .container
-        header.testimonials__header
-          h2.title_line See what others are saying about us
-        .testimonials__wrapper.slider
-          .testimonials__items
-            blockquote.testimonials__item.slider_item
-              .testimonials__author-foto
-                img(src="src/img/img.png" alt="")
-                p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
-                span Linda from example.com
-            blockquote.testimonials__item.slider_item
-              .testimonials__author-foto
-                img(src="src/img/img.png" alt="")
-                p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
-                span Linda from example.com
-            blockquote.testimonials__item.slider_item
-              .testimonials__author-foto
-                img(src="src/img/img.png" alt="")
-                p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
-                span Linda from example.com
-            button.testimonials__prev(type="button")
-            button.testimonials__next(type="button")
-          .testimonials__toggles.slider__toggles
-            label.slider__toggle(for="testimonials-input-1") 1
-            label.slider__toggle(for="testimonials-input-2") 2
-            label.slider__toggle(for="testimonials-input-3") 3
+      .testimonials-wrap
+        .container
+          header.testimonials__header
+            h2.title_line See what others are saying about us
+          .mis-stage
+            ul.mis-slider
+              li.mis-slide
+                a.mis-container(href="#")
+                  figure
+                    img(src="src/img/img.jpg" alt="photo1")
+                    figcaption thanks for all
+              li.mis-slide
+                a.mis-container(href="#")
+                  figure
+                    img(src="src/img/img.jpg" alt="photo1")
+                    figcaption thanks for all
+              li.mis-slide
+                a.mis-container(href="#")
+                  figure
+                    img(src="src/img/img.jpg" alt="photo1")
+                    figcaption thanks for all
+              button.testimonials__prev(type="button")
+              button.testimonials__next(type="button")
+          //.testimonials__wrapper.slider
+            .testimonials__items
+              blockquote.testimonials__item.slider_item
+                .testimonials__author-foto
+                  img(src="src/img/img.png" alt="")
+                  p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
+                  span Linda from example.com
+              blockquote.testimonials__item.slider_item
+                .testimonials__author-foto
+                  img(src="src/img/img.png" alt="")
+                  p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
+                  span Linda from example.com
+              blockquote.testimonials__item.slider_item
+                .testimonials__author-foto
+                  img(src="src/img/img.png" alt="")
+                  p “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
+                  span Linda from example.com
+              button.testimonials__prev(type="button")
+              button.testimonials__next(type="button")
+            .testimonials__toggles.slider__toggles
+              label.slider__toggle(for="testimonials-input-1") 1
+              label.slider__toggle(for="testimonials-input-2") 2
+              label.slider__toggle(for="testimonials-input-3") 3
     footer.footer
-      .container
-        menu.footer-menu
-          a.footer-menu__link(href="#") Contact Us
-          ul.footer-menu__list
-            li.footer-menu__item.footer-menu__item--active
-              a(href="#") Home
-            li.footer-menu__item
-              a(href="#") About
-            li.footer-menu__item
-              a(href="#") Services
-            li.footer-menu__item
-              a(href="#") Blog
-            li.footer-menu__item
-              a(href="#") Contact Us
-        .footer__columns
-          .footer__col
-            .footer__item
-              h3 Our adress
-              p.page-footer__text House No,11132, Sector 31, Gurgaon 122001 India
-            .footer__item
-              h3 Call us
-              span.page-footer__text 8 (999) 250-07-00
-              span.page-footer__text 8 (999) 250-07-00
-            .footer__item
-              h3 Email us
-              span.page-footer__text contactus@email.com
-          .footer__col
-            form(method="post")
-              .footer__field
-                label(for="name") Name:
-                input(name="name" type="text")
-              .footer__field
-                label(for="name") Subject:
-                input(name="name" type="text")
-              .footer__field
-                label(for="message") Your Message:
-                textarea(name="message" rows="3")
-              .footer__btn.btn
-                input(value="Send Message")
-        a.footer-menu__link(href="#") Contact Us
-    .footer-copyright
-      .container
-        .footer-copyright__wrap
-          span © 2016 Nishant Bazzad
-          span.social-links
-            a.social-link.social-link--vk(href="#")
-            a.social-link.social-link--fb(href="#")
-            a.social-link.social-link--g(href="#")
+      .footer-wrap
+        .container
+          menu.footer-menu
+            a.footer-menu__link(href="#") Contact Us
+            ul.footer-menu__list
+              li.footer-menu__item.footer-menu__item--active
+                a(href="#") Home
+              li.footer-menu__item
+                a(href="#") About
+              li.footer-menu__item
+                a(href="#") Services
+              li.footer-menu__item
+                a(href="#") Blog
+              li.footer-menu__item
+                a(href="#") Contact Us
+          .footer__columns
+            .footer__col
+              .footer__item
+                h4 Our adress
+                p.page-footer__text House No,11132, Sector 31, Gurgaon<br>122001 India
+              .footer__item
+                h4 Call us
+                p.page-footer__text 8 (999) 250-07-00<br>8 (999) 250-07-00
+              .footer__item
+                h4 Email us
+                a contactus@email.com
+            .footer__col
+              form(method="post")
+                .footer__field.footer__field--half
+                  label(for="name") Name:
+                  input(name="name" type="text")
+                .footer__field.footer__field--half
+                  label(for="name") Subject:
+                  input(name="name" type="text")
+                .footer__field
+                  label(for="message") Your Message:
+                  textarea(name="message" rows="5")
+                ul.footer__actions
+                  li
+                    input(class="btn" value="Send message" type="submit")
+
+      .footer-copyright
+        .container
+          .footer-copyright__wrap
+            span © 2016 Nishant Bazzad
+            span.social-links
+              a.social-link.social-link--vk(href="#")
+              a.social-link.social-link--fb(href="#")
+              a.social-link.social-link--g(href="#")
     script(src="src/js/jquery-2.2.0.min.js")
-    script(src="src/js/index.js")
+    script(src="src/js/index.js" type="text/javascript")
+    //script(src="scripts/mislider.js" type="text/javascript")
 
