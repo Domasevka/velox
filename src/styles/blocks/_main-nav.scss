@@ -1,14 +1,15 @@
 .page-header {
-    //background-image: url(../src/img/banner.jpg);
+    background-image: url(../src/img/banner.jpg);
     background-color: $gray;
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url(../src/img/banner.png);
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url(../src/img/banner.png);
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url(../src/img/banner.png);
+    //background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url(../src/img/banner.png);
+    // background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url(../src/img/banner.png);
+    // background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url(../src/img/banner.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 687px;
-    max-width: 1400px;
+    //min-height: 687px;
+    min-height: 710px;
+    //max-width: 1400px;
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -37,8 +38,6 @@
   margin-top: 84px;
 }
 
-
-
 .main-nav {
   &__list {
     display: flex;
@@ -53,6 +52,10 @@
     &-link {
       padding-left: 30px;
       padding-right: 30px;
+      &:hover {
+        transition: color .2s ease-in;
+        color: $color-success;
+      }
     }
   }
   &__item-link {
