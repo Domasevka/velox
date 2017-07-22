@@ -7,7 +7,7 @@ html(lang='ru')
     link(rel='stylesheet', href='css/style.css')
     //link(href="styles/mislider.css" rel="stylesheet" type="text/css")
 
-  body
+  body.js-body
     header.page-header
       .page-header__banner
         .container
@@ -148,18 +148,18 @@ html(lang='ru')
               li.mis-slide
                 a.mis-container(href="#")
                   figure
-                    img(src="src/img/img.jpg" alt="photo1")
-                    figcaption thanks for all
+                    img(src="src/img/testimonials1.jpg" alt="photo1")
+                    figcaption thanks for all1
               li.mis-slide
                 a.mis-container(href="#")
                   figure
-                    img(src="src/img/img.jpg" alt="photo1")
-                    figcaption thanks for all
+                    img(src="src/img/testimonials2.jpg" alt="photo2")
+                    figcaption thanks for all2
               li.mis-slide
                 a.mis-container(href="#")
                   figure
-                    img(src="src/img/img.jpg" alt="photo1")
-                    figcaption thanks for all
+                    img(src="src/img/testimonials3.jpg" alt="photo3")
+                    figcaption thanks for all3
               button.testimonials__prev(type="button")
               button.testimonials__next(type="button")
           //.testimonials__wrapper.slider
@@ -226,16 +226,17 @@ html(lang='ru')
                 ul.footer__actions
                   li
                     input(class="btn" value="Send message" type="submit")
+            a(href="#").to-top.js-to-top
       .footer-copyright
         .container
           p © 2016 Nishant Bazzad
           .social-links
             a.social-link.social-link--fb(href="#")
-              svg.svg-icon.svg-icon-arrow
+              //svg.svg-icon.svg-icon-arrow
                 use(xlink:href='#fb-glyph')
             a.social-link.social-link--vk(href="#")
             a.social-link.social-link--g(href="#")
-    script(src="src/js/jquery-2.2.0.min.js")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
     script(src="src/js/index.js" type="text/javascript")
     //script(src="scripts/mislider.js" type="text/javascript")
 

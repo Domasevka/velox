@@ -1,5 +1,6 @@
 .footer {
   &-wrap {
+    position: relative;
     background-color: $gray--darken;
     color: $color-secondary;
     padding: 80px 0 77px;
@@ -139,7 +140,7 @@ input[type="submit"] {
 }
 
 
-.social-link--fb {
+/*.social-link--fb {
   background-color: #3f729b;
   width: 34px;
   height: 34px;
@@ -154,7 +155,23 @@ input[type="submit"] {
   transform: scale(.618);
   -webkit-transform-origin: center;
   transform-origin: center;
+}*/
+
+.to-top {
+  position: absolute;
+  bottom: -69px;
+  right: 50%;
+  width: 69px;
+  height: 69px;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  color: $btn-main-color;
+  background-color: $color-success;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
+
 
 
 

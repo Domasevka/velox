@@ -1,5 +1,8 @@
 .testimonials {
-  margin: 65px 0 80px;
+  background-color: $gray--lightest;
+  &-wrap {
+    margin: 65px 0 80px;
+  }
   &__header {
     text-align: center;
   }
@@ -13,4 +16,42 @@
     text-align: center;
     padding: 0 15px;
   }
+}
+
+.mis-stage {
+  background-color: #fff;
+}
+
+.mis-slider {
+  margin-top: 138px;
+  height: 80px;
+  background-color: #eee;
+}
+
+.mis-slider li a {
+  text-decoration: none;
+  color: #666;
+  display: block;
+}
+
+.mis-slider li figcaption {
+  font-size: 1.5em;
+}
+
+.mis-slider li img {
+  max-width: 270px;
+  width: auto;
+  border-radius: 56px;
+  border: none;
+}
+
+.mis-slide {
+  width: 112px;
+  height: 112px;
+  padding: 40px;
+  margin-top: -138px
+}
+
+.mis-nav-buttons a {
+  color: #fff;
 }
