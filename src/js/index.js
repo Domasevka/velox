@@ -1,10 +1,43 @@
+//import $ from 'jquery';
+//import './scrollto';
+
 $(document).ready( function(){
 
         $('.js-to-top').click((event) => {
-            event.preventDefault();
+        event.preventDefault();
 
-        $('html, body').animate({scrollTop: $('.js-body').offset().top}, 200);
-    });
+    $('html, body').animate({
+        scrollTop: $('.js-body').offset().top
+    }, 200);
+});
+
+});
+
+    // features slider
+    function initFeaturesSlider() {
+        var $slider = $('.services__list'),
+            settings = {
+                dots: true,
+            },
+            targetClass = 'slick-initialized',
+            mq = window.matchMedia('(min-width: 850px)');
+
+        mq.addListener(onWidthChange);
+
+        onWidthChange(mq);
+
+        function onWidthChange(_mq) {
+            if (_mq.matches) {
+                if ($slider.hasClass(targetClass)) {
+                    $slider.slick('unslick');
+                }
+            } else {
+                if (!$slider.hasClass(targetClass)) {
+                    $slider.slick(settings);
+                }
+            }
+        }
+    }
 
     jQuery(function ($) {
         var slider = $('.mis-stage').miSlider({
@@ -275,5 +308,4 @@ $(document).ready( function(){
     });*/
 
 
-});
 

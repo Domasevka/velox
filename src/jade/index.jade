@@ -53,24 +53,32 @@ html(lang='ru')
     section.services
       .container
         header.services__header
-          h2.services__title.title_line Our services
-        ul.services__list
-          li.services__item
-            i.icon
-            h6 Logo design
-            p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          li.services__item
-            i.icon
-            h6 Web design
-            p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          li.services__item
-            i.icon
-            h6 Branding
-            p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          li.services__item
-            i.icon
-            h6 Illustrations
-            p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+          h2.title.title_line Our services
+        .services__list
+          .services__item
+            .services__icon-box
+              img.services__icon(src='img/services-icon.svg', alt="")
+            h6.services__title Logo design
+            p.services__text.
+              Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+          .services__item
+            .services__icon-box
+              img.services__icon(src='img/services-icon.svg', alt="")
+            h6.services__title Web design
+            p.services__text.
+              Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+          .services__item
+            .services__icon-box
+              img.services__icon(src='img/services-icon.svg', alt="")
+            h6.services__title Branding
+            p.services__text.
+              Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+          .services__item
+            .services__icon-box
+              img.services__icon(src='img/services-icon.svg', alt="")
+            h6.services__title Illustrations
+            p.services__text.
+              Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
     section.portfolio
       .portfolio-wrap
         .container
@@ -121,23 +129,23 @@ html(lang='ru')
           h2.brands__title.title_line Recent Brands we’ve worked with
         ul.brands__list
           li.brands__item
-            a.brands__item-link(href="#") Services
-              img(src="src/img/img.png")
+            a(href="#").brands__item-link
+              img(src="src/img/brands_1.jpg")
           li.brands__item
-            a.brands__item-link(href="#") Services
-              img(src="src/img/img.png")
+            a(href="#").brands__item-link
+              img(src="src/img/brands_2.jpg")
           li.brands__item
-            a.brands__item-link(href="#") Services
-              img(src="src/img/img.png")
+            a(href="#").brands__item-link
+              img(src="src/img/brands_3.jpg")
           li.brands__item
-            a.brands__item-link(href="#") Services
-              img(src="src/img/img.png")
+            a(href="#").brands__item-link
+              img(src="src/img/brands_4.jpg")
           li.brands__item
-            a.brands__item-link(href="#") Services
-              img(src="src/img/img.png")
+            a(href="#").brands__item-link
+              img(src="src/img/brands_5.jpg")
           li.brands__item
-            a.brands__item-link(href="#") Services
-              img(src="src/img/img.png")
+            a(href="#").brands__item-link
+              img(src="src/img/brands_6.jpg")
     section.testimonials
       .testimonials-wrap
         .container
@@ -153,12 +161,12 @@ html(lang='ru')
               li.mis-slide
                 a.mis-container(href="#")
                   figure
-                    img(src="src/img/testimonials1.jpg" alt="photo2")
+                    img(src="src/img/testimonials2.jpg" alt="photo2")
                     figcaption thanks for all2
               li.mis-slide
                 a.mis-container(href="#")
                   figure
-                    img(src="src/img/testimonials1.jpg" alt="photo3")
+                    img(src="src/img/testimonials3.jpg" alt="photo3")
                     figcaption thanks for all3
               button.testimonials__prev(type="button")
               button.testimonials__next(type="button")
@@ -238,6 +246,7 @@ html(lang='ru')
             a.social-link.social-link--g(href="#")
     script(src="./bower_components/jquery/dist/jquery.min.js")
     //script(src="./bower_components/mislider/dist/js/mislider.min.js")
+    script(src="./bower_components/slick-carousel/slick/slick.js/slick.min.js")
     script(src="src/js/index.js" type="text/javascript")
     //link(href="styles/mislider.css" rel="stylesheet" type="text/css")
     //script(src="scripts/mislider.js" type="text/javascript")

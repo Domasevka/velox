@@ -1,17 +1,53 @@
 .brands {
   margin: 65px 0 80px;
+
   &__header {
     text-align: center;
   }
+
   &__list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin: 0 -10px;
+    @media (max-width: $xl) {
+      justify-content: center;
+    }
   }
+
   &__item {
-    text-align: center;
-    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/6 - 20px);
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    @media (max-width: $xl) {
+      width: calc(25% - 20px);
+    }
+    @media (max-width: $lg) {
+      width: calc(33.333% - 20px);
+    }
+    @media (max-width: $md) {
+      width: calc(50% - 20px);
+    }
   }
+
+  &__item-link {
+    img{
+      display: block;
+      -webkit-filter: opacity(0.5);
+      filter: opacity(0.5);
+      margin: auto;
+      &:hover {
+        filter: opacity(1);
+      }
+      &:active {
+        filter: opacity(1);
+      }
+    }
+  }
+
 }
 
