@@ -144,7 +144,7 @@ html(lang='ru')
           header.testimonials__header
             h2.title_line See what others are saying about us
           .mis-stage
-            ul.mis-slider
+            ol.mis-slider
               li.mis-slide
                 a.mis-container(href="#")
                   figure
@@ -153,12 +153,12 @@ html(lang='ru')
               li.mis-slide
                 a.mis-container(href="#")
                   figure
-                    img(src="src/img/testimonials2.jpg" alt="photo2")
+                    img(src="src/img/testimonials1.jpg" alt="photo2")
                     figcaption thanks for all2
               li.mis-slide
                 a.mis-container(href="#")
                   figure
-                    img(src="src/img/testimonials3.jpg" alt="photo3")
+                    img(src="src/img/testimonials1.jpg" alt="photo3")
                     figcaption thanks for all3
               button.testimonials__prev(type="button")
               button.testimonials__next(type="button")
@@ -226,7 +226,7 @@ html(lang='ru')
                 ul.footer__actions
                   li
                     input(class="btn" value="Send message" type="submit")
-            a(href="#").to-top.js-to-top
+            a(href="").to-top.js-to-top
       .footer-copyright
         .container
           p © 2016 Nishant Bazzad
@@ -236,7 +236,10 @@ html(lang='ru')
                 use(xlink:href='#fb-glyph')
             a.social-link.social-link--vk(href="#")
             a.social-link.social-link--g(href="#")
-    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="./bower_components/jquery/dist/jquery.min.js")
+    //script(src="./bower_components/mislider/dist/js/mislider.min.js")
     script(src="src/js/index.js" type="text/javascript")
+    //link(href="styles/mislider.css" rel="stylesheet" type="text/css")
     //script(src="scripts/mislider.js" type="text/javascript")
+
 
