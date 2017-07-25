@@ -807,11 +807,21 @@ sub {
   background-color: #f5f6f8;
   color: #fff;
   border-radius: 100%;
-  display: inline-block;
-  width: 5em;
-  height: 5em;
-  line-height: 5em;
-  margin: 0 0 12px 0;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.services__icon {
+  height: 50px;
+  display: block;
+  margin: auto;
 }
 
 .services__title {
@@ -819,7 +829,7 @@ sub {
   font-family: OpenSans, sans-serif;
   position: relative;
   margin-bottom: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .services__title:after {

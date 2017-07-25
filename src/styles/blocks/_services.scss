@@ -16,11 +16,16 @@
     background-color: $gray--lightest;
     color: #fff;
     border-radius: 100%;
-    display: inline-block;
-    width: 5em;
-    height: 5em;
-    line-height: 5em;
-    margin: 0 0 12px 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 15px;
+  }
+  &__icon {
+    height: 50px;
+    display: block;
+    margin: auto;
   }
 
   &__title {
@@ -28,7 +33,7 @@
       font-family: $font-family;
       position: relative;
       margin-bottom: 10px;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
     &:after {
       content: '';
       position: absolute;
