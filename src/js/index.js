@@ -1,3 +1,4 @@
+//import 'slick-carousel/slick/slick-theme.scss';
 //import $ from 'jquery';
 //import './scrollto';
 
@@ -13,7 +14,7 @@ $(document).ready( function(){
 
 });
 
-    // features slider
+    // services slider
     function initFeaturesSlider() {
         var $slider = $('.services__list'),
             settings = {
@@ -39,7 +40,7 @@ $(document).ready( function(){
         }
     }
 
-    jQuery(function ($) {
+    /*jQuery(function ($) {
         var slider = $('.mis-stage').miSlider({
             //  The speed of the slide transition
             //  in milliseconds. Options: positive integer.
@@ -261,7 +262,7 @@ $(document).ready( function(){
             //  Descendant of the slider
             selectorSlide: 'li'
         });
-    });
+    });*/
 
 
     /*function misSlider() {
