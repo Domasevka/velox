@@ -12,10 +12,18 @@ $(document).ready( function(){
     }, 200);
 });
 
+
+
+$('.services__list').slick({
+    dots: true,
+     infinite: true,
+     slidesToShow: 4,
+     slidesToScroll: 4
 });
 
+
     // services slider
-    function initFeaturesSlider() {
+  function initFeaturesSlider() {
         var $slider = $('.services__list'),
             settings = {
                 dots: true,
@@ -39,6 +47,7 @@ $(document).ready( function(){
             }
         }
     }
+     });
 
     /*jQuery(function ($) {
         var slider = $('.mis-stage').miSlider({

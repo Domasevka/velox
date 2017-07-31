@@ -446,6 +446,11 @@ template {
   display: none;
 }
 
+html {
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
 body {
   font-family: OpenSans, sans-serif;
   font-size: 16px;
@@ -530,6 +535,48 @@ section {
   width: 100%;
 }
 */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-cp {
+  font-size: 3rem;
+  width: 1em;
+}
+
+.icon-facebook {
+  font-size: 3.2rem;
+  width: 0.46875em;
+}
+
+.icon-fb {
+  font-size: 3rem;
+  width: 1em;
+}
+
+.icon-left-arrow {
+  font-size: 3.2rem;
+  width: 1em;
+}
+
+.icon-linkedin {
+  font-size: 3rem;
+  width: 1em;
+}
+
+.icon-right-arrow {
+  font-size: 3.2rem;
+  width: 1em;
+}
+
+.icon-twitter {
+  font-size: 3rem;
+  width: 1em;
+}
+
 @font-face {
   font-family: OpenSans;
   font-weight: 300;
@@ -1347,22 +1394,6 @@ input[type="submit"] {
   letter-spacing: 0;
 }
 
-/*.social-link--fb {
-  background-color: #3f729b;
-  width: 34px;
-  height: 34px;
-}
-
-.social__link .svg-social {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-  -webkit-transform: scale(.618);
-  transform: scale(.618);
-  -webkit-transform-origin: center;
-  transform-origin: center;
-}*/
 .to-top {
   position: absolute;
   bottom: -69px;
@@ -1377,6 +1408,43 @@ input[type="submit"] {
   color: #fff;
   background-color: #00a5ff;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  width: 33px;
+  height: 33px;
+  background-color: #f1715e;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right: 2px;
+  padding: 0;
+  position: relative;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-icon-facebook {
+  height: 1.3em;
+  width: 1.0em;
+}
+
+.icon-icon-facebook.red_mod {
+  color: #525252;
 }
 
 .btn {

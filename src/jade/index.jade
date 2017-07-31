@@ -1,11 +1,12 @@
 doctype html
-html(lang='ru')
+include mixins
+html(lang='en')
   head
     meta(charset='UTF-8')
     title Velox
     meta(name='viewport', content='width=device-width,initial-scale=1')
     link(rel='stylesheet', href='css/style.css')
-    link(href="slick/slick-theme.css", rel="stylesheet", type="text/css")
+    link(href="bower_components/slick-carousel/slick/slick-theme.css", rel="stylesheet", type="text/css")
     //link(href="styles/mislider.css" rel="stylesheet" type="text/css")
 
   body.js-body
@@ -240,9 +241,8 @@ html(lang='ru')
         .container
           p © 2016 Nishant Bazzad
           .social-links
-            a.social-link.social-link--fb(href="#")
-              //svg.svg-icon.svg-icon-arrow
-                use(xlink:href='#fb-glyph')
+            a(href="#").social__link
+              +icon('icon-facebook','red_mod')
             a.social-link.social-link--vk(href="#")
             a.social-link.social-link--g(href="#")
     script(src="./bower_components/jquery/dist/jquery.min.js")
