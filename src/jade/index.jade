@@ -6,7 +6,7 @@ html(lang='en')
     title Velox
     meta(name='viewport', content='width=device-width,initial-scale=1')
     link(rel='stylesheet', href='css/style.css')
-    link(href="bower_components/slick-carousel/slick/slick-theme.css", rel="stylesheet", type="text/css")
+    link(href="bower_components/slick-carousel/slick/slick.css", rel="stylesheet", type="text/css")
     //link(href="styles/mislider.css" rel="stylesheet" type="text/css")
 
   body.js-body
@@ -88,7 +88,7 @@ html(lang='en')
             h2.portfolio__title.title_line Portfolio
           menu.portfolio__menu
             ul.portfolio__list
-              li.portfolio__item.portfolio__item--active
+              li.portfolio__item
                 a.portfolio__item-link(href="#") All
               li.portfolio__item
                 a.portfolio__item-link(href="#") Illustrations
@@ -98,33 +98,39 @@ html(lang='en')
                 a.portfolio__item-link(href="#") Branding
               li.portfolio__item
                 a.portfolio__item-link(href="#") Web Design
-            .portfolio__cols
-              a.portfolio__col(href="#")
-                span.portfolio__col-img
-                img(src="src/img/img1.png")
-                span.portfolio__col-title Agency - PSD Template
-              a.portfolio__col(href="#")
-                span.portfolio__col-img
-                img(src="src/img/img.png")
-                span.portfolio__col-title Pure Vodka Branding
-              a.portfolio__col(href="#")
-                span.portfolio__col-img
-                img(src="src/img/img.png")
-                span.portfolio__col-title Web Design
-              a.portfolio__col(href="#")
-                span.portfolio__col-img
-                img(src="src/img/img.png")
-                span.portfolio__col-title Everest Logo
-              a.portfolio__col(href="#")
-                span.portfolio__col-img
-                img(src="src/img/img.png")
-                span.portfolio__col-title Poster Design
-              a.portfolio__col(href="#")
-                span.portfolio__col-img
-                img(src="src/img/img.png")
-                span.portfolio__col-title Illustration
-            .btn-group
-              a(href="#").portfolio__btn.btn.btn_center.btn_bg Show more
+          .portfolio__cols
+            article.portfolio__col
+              a(href="#").portfolio__img
+                img(src="src/img/portfolio_1.jpg")
+              header.portfolio__col-title
+                h6 Agency - PSD
+            article(href="#").portfolio__col
+              a.portfolio__img(href="#")
+                img(src="src/img/portfolio_2.jpg")
+              header.portfolio__col-title
+                h6 Pure Vodka Branding
+            article(href="#").portfolio__col
+              a.portfolio__img(href="#")
+                img(src="src/img/portfolio_3.jpg")
+              header.portfolio__col-title
+                h6 Web Design
+            article(href="#").portfolio__col
+              a.portfolio__img(href="#")
+                img(src="src/img/portfolio_4.jpg")
+              header.portfolio__col-title
+                h6 Everest Logo
+            article(href="#").portfolio__col
+              a.portfolio__img(href="#")
+                img(src="src/img/portfolio_5.jpg")
+              header.portfolio__col-title
+                h6 Poster Design
+            article(href="#").portfolio__col
+              a.portfolio__img(href="#")
+                img(src="src/img/portfolio_6.jpg")
+              header.portfolio__col-title
+                h6 Illustration
+          .btn-group
+            a(href="#").portfolio__btn.btn.btn_center.btn_bg Show more
     section.brands
       .container
         header.brands__header
@@ -242,13 +248,13 @@ html(lang='en')
           p © 2016 Nishant Bazzad
           .social-links
             a(href="#").social__link
-              +icon('icon-facebook','red_mod')
+              +icon('facebook','red_mod')
             a.social-link.social-link--vk(href="#")
             a.social-link.social-link--g(href="#")
-    script(src="./bower_components/jquery/dist/jquery.min.js")
-      script( type="text/javascript" src="./bower_components/jquery/dist/jquery-migrate-1.4.1.min.js")
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script( type="text/javascript" src="bower_components/jquery/dist/jquery-migrate-1.4.1.min.js")
     //script(src="./bower_components/slick-carousel/mislider/dist/js/mislider.min.js")
-    script(src="./bower_components/slick-carousel/slick/slick.min.js")
+    script(src="bower_components/slick-carousel/slick/slick.min.js")
     script(src="src/js/index.js" type="text/javascript")
 
     //link(href="styles/mislider.css" rel="stylesheet" type="text/css")

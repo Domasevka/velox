@@ -1,0 +1,34 @@
+{
+  "name": "menu.js",
+  "description": "A menu library with a simple API.",
+  "main": "dist/menu.js",
+  "authors": [
+    "Ethan Hann <ethanhann@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Menu",
+    "Navigation",
+    "Tree"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/MenuJS/menu.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.3.0",
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.3.0",
+    "commit": "b90940ac6bc98d8675d4a54d31f428fd675065b8"
+  },
+  "_source": "https://github.com/MenuJS/menu.js.git",
+  "_target": "^0.3.0",
+  "_originalSource": "menu.js",
+  "_direct": true
+}
