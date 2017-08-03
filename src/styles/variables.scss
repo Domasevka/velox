@@ -27,10 +27,11 @@ $gray--darken: #3b404c;
 $font-family: OpenSans, sans-serif;
 $font: OpenSans, serif;
 
+$breakpoint: 1170px;
+
 $sm: 544px;     // Small screen / phone
 $md: 768px;     // Medium screen / tablet
 $lg: 992px;     // Large screen / desktop
 $xl: 1200px;    // Extra large screen desktop
 $xxl: 1440px;   // Wide desktop
 
-$breakpoint: 1170px;

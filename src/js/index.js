@@ -4,8 +4,10 @@
 "use strict";
 $(document).ready( function(){
 
-        $('.js-to-top').click((event) => {
-        event.preventDefault();
+//to top button
+
+    $('.js-to-top').click((event) => {
+    event.preventDefault();
 
     $('html, body').animate({
         scrollTop: $('.js-body').offset().top
@@ -13,23 +15,18 @@ $(document).ready( function(){
 });
 
 
+//services slider
 
-$('.services__list').slick({
-    dots: true,
-     infinite: true,
-     slidesToShow: 2,
-     slidesToScroll: 4
-});
-
-
-    // services slider
-  function initFeaturesSlider() {
+  function initServiceSlider() {
         var $slider = $('.services__list'),
             settings = {
-                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: true
             },
             targetClass = 'slick-initialized',
-            mq = window.matchMedia('(min-width: 850px)');
+            mq = window.matchMedia('(min-width: 767px)');
 
         mq.addListener(onWidthChange);
 
@@ -48,6 +45,9 @@ $('.services__list').slick({
         }
     }
 
+    initServiceSlider();
+
+//svg sprite
 
 
 ;( function( window, document )

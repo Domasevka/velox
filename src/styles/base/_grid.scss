@@ -1,10 +1,16 @@
 .container {
   width: 100%;
-  max-width: $site-width;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: $gutter;
   padding-left: $gutter;
+  @media (min-width: $breakpoint) and (max-width: $xxl - 1) {
+    max-width: 1170px;
+  }
+  @media (min-width: $xxl) {
+    max-width: 1230px;
+  }
 }
 
 /*

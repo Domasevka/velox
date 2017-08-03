@@ -470,6 +470,15 @@ body {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -519,11 +528,23 @@ section {
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media (min-width: 1170px) and (max-width: 1439px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1230px;
+  }
 }
 
 /*
@@ -1499,8 +1520,8 @@ input[type="submit"] {
 }
 
 .icon-facebook {
-  height: 1.3em;
-  width: 1.0em;
+  height: 0.5em;
+  width: 0.5em;
 }
 
 .icon-facebook.red_mod {
