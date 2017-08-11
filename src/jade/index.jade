@@ -245,12 +245,17 @@ html(lang='en')
             a(href="").to-top.js-to-top
       .footer-copyright
         .container
-          p © 2016 Nishant Bazzad
-          .social-links
-            a(href="#").social__link
-              +icon('facebook','red_mod')
-            a.social-link.social-link--vk(href="#")
-            a.social-link.social-link--g(href="#")
+          .footer-copyright-wrap
+            p © 2016 Nishant Bazzad
+            .social-links
+              a(href="#").sociallink
+                +icon('fb','gray_mod')
+              a(href="#").social__link
+                +icon('twitter','gray_mod')
+              a(href="#").social__link
+                +icon('cp','gray_mod')
+              a(href="#").social__link
+                +icon('linkedin','gray_mod')
     script(src="bower_components/jquery/dist/jquery.min.js")
     script( type="text/javascript" src="bower_components/jquery/dist/jquery-migrate-1.4.1.min.js")
     //script(src="./bower_components/slick-carousel/mislider/dist/js/mislider.min.js")

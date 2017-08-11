@@ -1294,6 +1294,11 @@ sub {
 }
 
 .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   position: relative;
   background-color: #3b404c;
   color: #fff;
@@ -1401,6 +1406,7 @@ sub {
 
 .footer p {
   font: 400 normal 18px / 1.4 OpenSans, sans-serif;
+  display: inline-block;
   text-align: left;
   padding: 0 0 18px;
   color: #999;
@@ -1435,6 +1441,12 @@ sub {
   display: inline-block;
   padding: 0 1em 0 0;
   vertical-align: middle;
+}
+
+.footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 label {
@@ -1492,17 +1504,24 @@ input[type="submit"] {
 }
 
 .social-links {
+  display: inline-block;
+}
+
+.footer-copyright-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.social__link {
+/*.social__link {
   width: 33px;
   height: 33px;
-  background-color: #f1715e;
+  background-color: $gray;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
@@ -1510,22 +1529,17 @@ input[type="submit"] {
   margin-right: 2px;
   padding: 0;
   position: relative;
-}
-
+}*/
 .icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  height: 33px;
+  width: 33px;
   fill: currentColor;
+  margin-right: 5px;
 }
 
-.icon-facebook {
-  height: 0.5em;
-  width: 0.5em;
-}
-
-.icon-facebook.red_mod {
-  color: #525252;
+.gray_mod {
+  color: #999;
 }
 
 .btn {
