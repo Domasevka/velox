@@ -507,6 +507,7 @@ li {
 }
 
 img {
+  border-style: none;
   width: auto;
   max-width: 100%;
   height: auto;
@@ -563,6 +564,11 @@ section {
   fill: currentColor;
 }
 
+.icon-bar-menu {
+  font-size: 1.6rem;
+  width: 1em;
+}
+
 .icon-cp {
   font-size: 3rem;
   width: 1em;
@@ -580,7 +586,7 @@ section {
 
 .icon-left-arrow {
   font-size: 3.2rem;
-  width: 1em;
+  width: 0.6375em;
 }
 
 .icon-linkedin {
@@ -591,6 +597,11 @@ section {
 .icon-right-arrow {
   font-size: 3.2rem;
   width: 1em;
+}
+
+.icon-top-arrow {
+  font-size: 2.04rem;
+  width: 1.56863em;
 }
 
 .icon-twitter {
@@ -1449,6 +1460,18 @@ sub {
   display: flex;
 }
 
+.footer-copyright-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
 label {
   display: block;
   font-size: 24px;
@@ -1488,6 +1511,7 @@ input[type="submit"] {
 }
 
 .to-top {
+  transition: all 0.2s ease-in;
   position: absolute;
   bottom: -69px;
   right: 50%;
@@ -1503,43 +1527,44 @@ input[type="submit"] {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+.to-top:hover {
+  background-color: #33ccff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
 .social-links {
   display: inline-block;
 }
 
-.footer-copyright-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.social__link {
+  margin-right: 5px;
 }
 
-/*.social__link {
-  width: 33px;
-  height: 33px;
-  background-color: $gray;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  vertical-align: middle;
-  margin-right: 2px;
-  padding: 0;
-  position: relative;
-}*/
 .icon {
   display: inline-block;
   height: 33px;
   width: 33px;
   fill: currentColor;
-  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .gray_mod {
   color: #999;
+}
+
+.white_mod {
+  color: #fff;
+}
+
+.to-top .icon-left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 24px;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .btn {

@@ -5,6 +5,10 @@
   fill: currentColor;
 }
 
+.icon-bar-menu {
+  font-size:(16/10)*1rem;
+  width:(16/16)*1em;
+}
 .icon-cp {
   font-size:(30/10)*1rem;
   width:(30/30)*1em;
@@ -19,7 +23,7 @@
 }
 .icon-left-arrow {
   font-size:(32/10)*1rem;
-  width:(32/32)*1em;
+  width:(20.4/32)*1em;
 }
 .icon-linkedin {
   font-size:(30/10)*1rem;
@@ -28,6 +32,10 @@
 .icon-right-arrow {
   font-size:(32/10)*1rem;
   width:(32/32)*1em;
+}
+.icon-top-arrow {
+  font-size:(20.4/10)*1rem;
+  width:(32/20.4)*1em;
 }
 .icon-twitter {
   font-size:(30/10)*1rem;

@@ -114,6 +114,12 @@
   &-copyright {
     display: flex;
   }
+  &-copyright-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
 }
 
 label {
@@ -153,6 +159,7 @@ input[type="submit"] {
 }
 
 .to-top {
+  @include transition;
   position: absolute;
   bottom: -69px;
   right: 50%;
@@ -164,44 +171,44 @@ input[type="submit"] {
   color: $btn-main-color;
   background-color: $color-success;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+  &:hover {
+    background-color: $color-success--light;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .social-links {
   display: inline-block;
 }
 
-.footer-copyright-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.social__link {
+  margin-right: 5px;
 }
-
-/*.social__link {
-  width: 33px;
-  height: 33px;
-  background-color: $gray;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  vertical-align: middle;
-  margin-right: 2px;
-  padding: 0;
-  position: relative;
-}*/
 
 .icon {
   display: inline-block;
   height: 33px;
   width: 33px;
   fill: currentColor;
-  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .gray_mod {
     color: $gray;
   }
 
+.white_mod {
+  color: $color-secondary;
+}
 
+.to-top .icon-left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 24px;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
 
 
 

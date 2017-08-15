@@ -40,14 +40,14 @@ gulp.task('svgSpriteBuild', function (){
             }
         }))
         // remove all fill, style and stroke declarations in out shapes
-        .pipe(cheerio({
+        /*.pipe(cheerio({
             run: function ($) {
                 $('[fill]').removeAttr('fill');
                 $('[stroke]').removeAttr('stroke');
                 $('[style]').removeAttr('style');
             },
             parserOptions: {xmlMode: true}
-        }))
+        }))*/
         // cheerio plugin create unnecessary string '&gt;', so replace it.
         .pipe(replace('&gt;', '>'))
         // build svg sprite
@@ -67,10 +67,12 @@ gulp.task('svgSpriteBuild', function (){
         .pipe(gulp.dest('src/i/sprite/'));
 });
 
+
+
 gulp.task('watch', function(){
 	gulp.watch('./src/jade/**/*.jade', ['jade']);
 	gulp.watch('./src/styles/**/*.scss', ['sass']);
 });
 
 gulp.task('default', ['jade', 'sass', 'watch']);
-gulp.task('svgSprite', ['svgSpriteBuild', 'svgSpriteSass']);
+gulp.task('svgSprite', ['svgSpriteBuild']);
