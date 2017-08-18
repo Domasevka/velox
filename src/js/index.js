@@ -1,6 +1,7 @@
 //import 'slick-carousel/slick/slick-theme.scss';
 //import $ from 'jquery';
 //import './scrollto';
+//import "menu";
 "use strict";
 $(document).ready( function(){
 
@@ -50,8 +51,7 @@ $(document).ready( function(){
 //svg sprite
 
 
-;( function( window, document )
-{
+;( function( window, document ){
     'use strict';
 
     var file     = 'src/i/sprite/sprite.svg',
@@ -105,6 +105,36 @@ $(document).ready( function(){
     catch( e ){}
 
 }( window, document ) );
+
+//mobile menu
+    var home = {
+
+        name: 'Home',
+
+    url: '#'
+
+};
+
+    var myWork = {
+        name: 'MyWork',
+    section: {
+        title: 'My Work',
+        items: [{
+            name: 'My Work submenu',
+        section:{
+            title: 'My Work submenu',
+            items:[
+                { name: 'subsub 1'}
+            ]
+        }
+    }]
+    }
+
+};
+    
+
+
+
 });
 
 

@@ -854,6 +854,12 @@ sub {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .main-nav--closed {
+    display: none;
+  }
+}
+
 .menu--toggle {
   display: none;
 }
@@ -1533,11 +1539,26 @@ input[type="submit"] {
 }
 
 .social-links {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 33px;
+  width: 33px;
+  opacity: 0.5;
+  border-radius: 50%;
   margin-right: 5px;
+}
+
+.social__link:hover {
+  opacity: 1;
 }
 
 .icon {
@@ -1756,4 +1777,92 @@ input[type="submit"] {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+#mobileMenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+#mobileMenuButton {
+  display: block;
+  background: blue;
+  font-size: 14px;
+  color: white;
+  padding: 20px;
+}
+
+.title {
+  margin: 40px 0 5px 15%;
+  font-size: 22px;
+  color: #696969;
+}
+
+.item {
+  display: block;
+  position: relative;
+  color: #0397f9;
+  font-size: 18px;
+  padding-top: 25px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.item.more:after {
+  content: "";
+  width: 16px;
+  height: 17px;
+  background-image: url("../images/icons.png");
+  background-position: right;
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.button.back {
+  display: block;
+  color: #0397f9;
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: 2px solid #0397f9;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.button.close {
+  background-image: url("../images/icons.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  margin: 20px 20px 0 20px;
+  width: 24px;
+  height: 30px;
+}
+
+.button.close.static {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobileMenuOpener {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 20px;
+}
+
+.line {
+  width: inherit;
+  border-top: 4px solid orange;
+  margin-bottom: 4px;
 }

@@ -13,37 +13,40 @@
 			<div class="page-header__banner">
 				<div class="container">
 					<div class="page-header__container"><a href="#" class="page-header__logo"><img src="src/img/logo.png" width="130" height="38" alt="Velox"></a>
-						<nav class="main-nav main-nav--closed">
-							<div class="main-nav__wrapper">
-								<ul class="main-nav__list">
-									<li class="main-nav__item main-nav__item--active"><a href="#" class="main-nav__item-link">Services</a></li>
-									<li class="main-nav__item"><a href="#" class="main-nav__item-link">Portofolio</a></li>
-									<li class="main-nav__item"><a href="#" class="main-nav__item-link">Testimonials</a></li>
-									<li class="main-nav__item"><a href="#" class="main-nav__item-link">About</a></li>
-									<li class="main-nav__item"><a href="#" class="main-nav__item-link">Contact</a></li>
-								</ul>
+						<!--nav.main-nav.main-nav--closed
+						.main-nav__wrapper
+						  ul.main-nav__list
+						    li.main-nav__item.main-nav__item--active
+						      a.main-nav__item-link(href="#") Services
+						    li.main-nav__item
+						      a.main-nav__item-link(href="#") Portofolio
+						    li.main-nav__item
+						      a.main-nav__item-link(href="#") Testimonials
+						    li.main-nav__item
+						      a.main-nav__item-link(href="#") About
+						    li.main-nav__item
+						      a.main-nav__item-link(href="#") Contact
+						-->
+						<!--button.menu--toggle(type="button") Открыть меню-->
+						<div id="mobileMenuWrapper">
+							<div id="mobileMenu">
+								<!--a.fa.fa-bars.social__link(href="#menu")+icon('bar-menu','gray_mod')
+								-->
 							</div>
-						</nav>
-						<button type="button" class="menu--toggle">Открыть меню
-							<!--.side-menu
-							.menu--toggle
-							  span
-							  span
-							  span
-							.menu--toggle-cross &#735;
-							ul.side-menu__list
-							  li.side-menu__item
-							    a.side-menu__item-link(href="#") Services
-							  li.side-menu__item
-							    a.side-menu__item-link(href="#") Portfolio
-							  li.side-menu__item
-							    a.side-menu__item-link(href="#") Testimonials
-							  li.side-menu__item
-							    a.side-menu__item-link(href="#") About
-							  li.side-menu__item
-							    a.side-menu__item-link(href="#") Contact
-							-->
-						</button>
+						</div>
+						<!--nav
+						ul
+						  li
+						    a(href="#") Services
+						  li
+						    a(href="#") Portfolio
+						  li
+						    a(href="#") Testimonials
+						  li
+						    a(href="#") About
+						  li
+						    a(href="#") Contact
+						-->
 					</div>
 					<div class="page-header__title">
 						<h1>Velox One Page Template</h1>
@@ -275,8 +278,11 @@
 		</footer>
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery-migrate-1.4.1.min.js"></script>
-		<!--script(src="./bower_components/slick-carousel/mislider/dist/js/mislider.min.js")-->
 		<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+		<script src="bower_components/jquery.easing/js/jquery.easing.js">
+			<script src="bower_components/jquery.mobilemenu/jquery.mobilemenu.js"></script>
+		</script>
+		<script src="src/js/menu.js" type="text/javascript"></script>
 		<script src="src/js/index.js" type="text/javascript"></script>
 		<!--link(href="styles/mislider.css" rel="stylesheet" type="text/css")-->
 		<!--script(src="scripts/mislider.js" type="text/javascript")-->
