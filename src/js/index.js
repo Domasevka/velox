@@ -3,12 +3,12 @@
 //import './scrollto';
 //import "menu";
 "use strict";
-$(document).ready( function(){
+$(document).ready(function () {
 
 //to top button
 
-    $('.js-to-top').click((event) => {
-    event.preventDefault();
+    $('.js-to-top').click((event) = > {
+        event.preventDefault();
 
     $('html, body').animate({
         scrollTop: $('.js-body').offset().top
@@ -18,7 +18,7 @@ $(document).ready( function(){
 
 //services slider
 
-  function initServiceSlider() {
+    function initServiceSlider() {
         var $slider = $('.services__list'),
             settings = {
                 slidesToShow: 1,
@@ -49,108 +49,79 @@ $(document).ready( function(){
     initServiceSlider();
 
 //svg sprite
+    ( function (window, document) {
+        'use strict';
 
+        var file = 'src/i/sprite/sprite.svg',
+            revision = 1;
 
-;( function( window, document ){
-    'use strict';
-
-    var file     = 'src/i/sprite/sprite.svg',
-        revision = 1;
-
-    if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
-        return true;
-
-    var isLocalStorage = 'localStorage' in window && window[ 'localStorage' ] !== null,
-        request,
-        data,
-        insertIT = function()
-        {
-            document.body.insertAdjacentHTML( 'afterbegin', data );
-        },
-        insert = function()
-        {
-            if( document.body ) insertIT();
-            else document.addEventListener( 'DOMContentLoaded', insertIT );
-        };
-
-    if( isLocalStorage && localStorage.getItem( 'inlineSVGrev' ) == revision )
-    {
-        data = localStorage.getItem( 'inlineSVGdata' );
-        if( data )
-        {
-            insert();
+        if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
             return true;
-        }
-    }
 
-    try
-    {
-        request = new XMLHttpRequest();
-        request.open( 'GET', file, true );
-        request.onload = function()
-        {
-            if( request.status >= 200 && request.status < 400 )
-            {
-                data = request.responseText;
+        var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+            request,
+            data,
+            insertIT = function () {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            },
+            insert = function () {
+                if (document.body) insertIT();
+                else document.addEventListener('DOMContentLoaded', insertIT);
+            };
+
+        if (isLocalStorage && localStorage.getItem('inlineSVGrev') == revision) {
+            data = localStorage.getItem('inlineSVGdata');
+            if (data) {
                 insert();
-                if( isLocalStorage )
-                {
-                    localStorage.setItem( 'inlineSVGdata',  data );
-                    localStorage.setItem( 'inlineSVGrev',   revision );
-                }
+                return true;
             }
         }
-        request.send();
-    }
-    catch( e ){}
 
-}( window, document ) );
+        try {
+            request = new XMLHttpRequest();
+            request.open('GET', file, true);
+            request.onload = function () {
+                if (request.status >= 200 && request.status < 400) {
+                    data = request.responseText;
+                    insert();
+                    if (isLocalStorage) {
+                        localStorage.setItem('inlineSVGdata', data);
+                        localStorage.setItem('inlineSVGrev', revision);
+                    }
+                }
+            };
+            request.send();
+        }
+        catch (e) {
+        }
+
+    }(window, document) );
 
 //mobile menu
-    var home = {
-
-        name: 'Home',
-
-    url: '#'
-
-};
-
-    var myWork = {
-        name: 'MyWork',
-    section: {
-        title: 'My Work',
-        items: [{
-            name: 'My Work submenu',
-        section:{
-            title: 'My Work submenu',
-            items:[
-                { name: 'subsub 1'}
-            ]
-        }
-    }]
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
     }
 
-};
-    
-
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 
 
 });
 
 
-
-    /*function misSlider() {
-        var slider = $('.js-mis-stage').miSlider({
-        stageHeight: 380,
-        slidesOnStage: false,
-        slidePosition: 'center',
-        slideStart: 'mid',
-        slideScaling: 150,
-        offsetV: -5,
-        centerV: true,
-        navButtonsOpacity: 1
-    });
-    }*/
+/*function misSlider() {
+ var slider = $('.js-mis-stage').miSlider({
+ stageHeight: 380,
+ slidesOnStage: false,
+ slidePosition: 'center',
+ slideStart: 'mid',
+ slideScaling: 150,
+ offsetV: -5,
+ centerV: true,
+ navButtonsOpacity: 1
+ });
+ }*/
 
 
 
