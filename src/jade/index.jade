@@ -9,8 +9,17 @@ html(lang='en')
 
     //link(href="bower_components/slick-carousel/slgick/slick.css", rel="stylesheet", type="text/css")
     //link(href="styles/mislider.css" rel="stylesheet" type="text/css")
-
   body.js-body
+    #mySidenav.sidenav
+      a.closebtn(href='javascript:void(0)', onclick='closeNav()') &times;
+      a(href='#') Services
+      a(href='#') Portfolio
+      a(href='#') Testimonials
+      a(href='#') About
+      a(href='#') Contact
+    span(style='font-size:30px;cursor:pointer', onclick='openNav()') &#9776;
+      //a(href="#").link
+        +icon('bar-menu','gray_mod')
     header.page-header
       .page-header__banner
         .container
@@ -30,14 +39,7 @@ html(lang='en')
                     a.main-nav__item-link(href="#") About
                   li.main-nav__item
                     a.main-nav__item-link(href="#") Contact
-            #mySidenav.sidenav
-              a.closebtn(href='javascript:void(0)', onclick='closeNav()')
-              a(href='#') Services
-              a(href='#') Portfolio
-              a(href='#') Testimonials
-              a(href='#') About
-              a(href='#') Contact
-            span(style='font-size:30px;cursor:pointer', onclick='openNav()') &times;
+
               //a(href="#").link
                 +icon('bar-menu','gray_mod')
               //+icon('bar-menu','gray_mod')

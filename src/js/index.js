@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 //to top button
 
-    $('.js-to-top').click((event) = > {
+    $('.js-to-top').click((event)=>{
         event.preventDefault();
 
     $('html, body').animate({
@@ -99,7 +99,7 @@ $(document).ready(function () {
 
 //mobile menu
     function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("mySidenav").style.width = "250px";
     }
 
     function closeNav() {
