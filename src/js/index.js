@@ -21,8 +21,14 @@ $(document).ready(function () {
     function initServiceSlider() {
         var $slider = $('.services__list'),
             settings = {
+                autoplay      : true,
+                autoplaySpeed : 4500,
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                prevArrow     : '<button class="services__btn services__btn_left">' +
+                '<svg class="svg-arrow"><use xlink:href="#left-arrow"></use></svg></button>',
+                nextArrow     : '<button class="services__btn services__btn_right">' +
+                '<svg class="svg-arrow "><use xlink:href="#left-arrow"></use></svg></button>',
                 arrows: true,
                 dots: true
             },
@@ -98,16 +104,29 @@ $(document).ready(function () {
     }(window, document) );
 
 //mobile menu
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
+//bower install jquery-nav-scroll
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
+    $('.nav').navScroll({
+        mobileDropdown: true,
+        mobileBreakpoint: 768
+    });
+
+    $('.nav').on('click', '.nav-mobile', function (e) {
+        e.preventDefault();
+        $('.nav ul').slideToggle('fast');
+    });
 
 
 });
+/*//mobile menu
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}*/
+
 
 
 /*function misSlider() {

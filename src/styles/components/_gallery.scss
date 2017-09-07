@@ -1,0 +1,110 @@
+.services {
+    position: relative;
+    &__btn {
+        position: absolute;
+        z-index: 99;
+        top: 80px;
+        display: flex;
+        width: 36px;
+        height: 36px;
+        transform: translateY(-50%);
+
+        border: 2px solid $gray;
+        border-radius: 50%;
+        background-color: $gray;
+
+        align-items: center;
+        fill: $color-secondary;
+        justify-content: center;
+        &:hover {
+            color: $gray;
+            background-color: $gray;
+
+            fill: $color-secondary;
+        }
+        &_left {
+            left: 20px;
+            @media (min-width: $xxl) {
+                left: 145px;
+            }
+        }
+        &_right {
+            right: 20px;
+
+            transform: translateY(-50%) rotate(180deg);
+            @media (min-width: $xxl) {
+                right: 145px;
+            }
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: -25px;
+        list-style: none;
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        li {
+            position: relative;
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+            button {
+                position: absolute;
+                bottom: 0;
+                display: inherit;
+                overflow: hidden;
+                width: 10px;
+                height: 11px;
+                text-indent: -9999px;
+                border: 0;
+                border-radius: 50%;
+                background: $gray--light;
+                cursor: pointer;
+                margin: 0 5px;
+             }
+
+
+        }
+    }
+}
+
+.services .slick-dots .slick-active button {
+    background-color: $color-success;
+}
+
+.services .svg-arrow {
+    width: 15px;
+    height: 15px;
+}
+
+/*
+.services__list .slick-next, .services__list .slick-prev {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    transform: translateY(-50%);
+    border: 2px solid $color-secondary;
+    border-radius: 50%;
+    background-color: $gray;
+
+    align-items: center;
+    fill: $color-secondary;
+    justify-content: center;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}*/

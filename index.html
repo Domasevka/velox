@@ -9,41 +9,49 @@
 		<!--link(href="styles/mislider.css" rel="stylesheet" type="text/css")-->
 	</head>
 	<body class="js-body">
-		<div id="mySidenav" class="sidenav"><a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a><a href="#">Services</a><a href="#">Portfolio</a><a href="#">Testimonials</a><a href="#">About</a><a href="#">Contact</a></div><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
-			<!--a(href="#").link+icon('bar-menu','gray_mod')
-			--></span>
+		<!--#mySidenav.sidenav
+		a.closebtn(href='javascript:void(0)', onclick='closeNav()') &times;
+		a(href='#') Services
+		a(href='#') Portfolio
+		a(href='#') Testimonials
+		a(href='#') About
+		a(href='#contact') Contact
+		-->
+		<!--span.sidenav-btn(onclick='openNav()') &#9776;
+		//a(href="#").link
+		  +icon('bar-menu','gray_mod')
+		-->
 		<header class="page-header">
 			<div class="page-header__banner">
 				<div class="container">
 					<div class="page-header__container"><a href="#" class="page-header__logo"><img src="src/img/logo.png" width="130" height="38" alt="Velox"></a>
-						<nav class="main-nav main-nav--closed">
-							<div class="main-nav__wrapper">
-								<ul class="main-nav__list">
-									<li class="main-nav__item main-nav__item--active"><a href="#" class="main-nav__item-link">Services</a></li>
-									<li class="main-nav__item"><a href="#" class="main-nav__item-link">Portofolio</a></li>
-									<li class="main-nav__item"><a href="#" class="main-nav__item-link">Testimonials</a></li>
-									<li class="main-nav__item"><a href="#" class="main-nav__item-link">About</a></li>
-									<li class="main-nav__item"><a href="#" class="main-nav__item-link">Contact</a></li>
-								</ul>
-							</div>
-							<!--a(href="#").link+icon('bar-menu','gray_mod')
-							-->
-							<!--+icon('bar-menu','gray_mod')-->
-						</nav>
-						<!--nav
-						ul
-						  li
-						    a(href="#") Services
-						  li
-						    a(href="#") Portfolio
-						  li
-						    a(href="#") Testimonials
-						  li
-						    a(href="#") About
-						  li
-						    a(href="#") Contact
-						//+icon('bar-menu','gray_mod')
+						<!--nav.main-nav.main-nav--closed
+						.main-nav__wrapper
+						  ul.main-nav__list
+						    li.main-nav__item.main-nav__item--active
+						      a.main-nav__item-link(href="#") Services
+						    li.main-nav__item
+						      a.main-nav__item-link(href="#") Portofolio
+						    li.main-nav__item
+						      a.main-nav__item-link(href="#") Testimonials
+						    li.main-nav__item
+						      a.main-nav__item-link(href="#") About
+						    li.main-nav__item
+						      a.main-nav__item-link(href="#") Contact
+						
 						-->
+						<nav class="nav">
+							<div class="nav-mobile">Click
+								<ul>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Portfolio</a></li>
+									<li><a href="#">Testimonials</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+								<!--+icon('bar-menu','gray_mod')-->
+							</div>
+						</nav>
 					</div>
 					<div class="page-header__title">
 						<h1>Velox One Page Template</h1>
@@ -60,17 +68,17 @@
 				</header>
 				<div class="services__list">
 					<div class="services__item">
-						<div class="services__icon-box"><img src="img/services-icon.svg" alt="" class="services__icon"></div>
+						<div class="services__icon-box"><img src="src/img/services_illustrations.svg" alt="illustrations" class="services__icon"></div>
 						<h6 class="services__title">Logo design</h6>
 						<p class="services__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
 					</div>
 					<div class="services__item">
-						<div class="services__icon-box"><img src="img/services-icon.svg" alt="" class="services__icon"></div>
+						<div class="services__icon-box"><img src="src/img/services_illustrations.svg" alt="illustrations" class="services__icon"></div>
 						<h6 class="services__title">Web design</h6>
 						<p class="services__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
 					</div>
 					<div class="services__item">
-						<div class="services__icon-box"><img src="img/services-icon.svg" alt="" class="services__icon"></div>
+						<div class="services__icon-box"><img src="src/img/services_illustrations.svg" alt="illustrations" class="services__icon"></div>
 						<h6 class="services__title">Branding</h6>
 						<p class="services__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
 					</div>
@@ -89,13 +97,18 @@
 						<h2 class="portfolio__title title_line">Portfolio</h2>
 					</header>
 					<menu class="portfolio__menu">
-						<ul class="portfolio__list">
-							<li class="portfolio__item"><a href="#" class="portfolio__item-link">All</a></li>
-							<li class="portfolio__item"><a href="#" class="portfolio__item-link">Illustrations</a></li>
-							<li class="portfolio__item"><a href="#" class="portfolio__item-link">Logo</a></li>
-							<li class="portfolio__item"><a href="#" class="portfolio__item-link">Branding</a></li>
-							<li class="portfolio__item"><a href="#" class="portfolio__item-link">Web Design</a></li>
-						</ul>
+						<!--ul.portfolio__list
+						li.portfolio__item
+						  a(href="#").portfolio__item-link All
+						li.portfolio__item
+						  a(href="#").portfolio__item-link Illustrations
+						li.portfolio__item
+						  a(href="#").portfolio__item-link Logo
+						li.portfolio__item
+						  a(href="#").portfolio__item-link Branding
+						li.portfolio__item
+						  a(href="#").portfolio__item-link Web Design
+						-->
 					</menu>
 					<div class="portfolio__cols">
 						<article class="portfolio__col"><a href="#" class="portfolio__img"><img src="src/img/portfolio_1.jpg"></a>
@@ -203,15 +216,20 @@
 			<div class="footer-wrap">
 				<div class="container">
 					<menu class="footer-menu"><a href="#" class="footer-menu__link">Contact Us</a>
-						<ul class="footer-menu__list">
-							<li class="footer-menu__item footer-menu__item--active"><a href="#">Home</a></li>
-							<li class="footer-menu__item"><a href="#">About</a></li>
-							<li class="footer-menu__item"><a href="#">Services</a></li>
-							<li class="footer-menu__item"><a href="#">Blog</a></li>
-							<li class="footer-menu__item"><a href="#">Contact Us</a></li>
-						</ul>
+						<!--ul.footer-menu__list
+						li.footer-menu__item.footer-menu__item--active
+						  a(href="#") Home
+						li.footer-menu__item
+						  a(href="#") About
+						li.footer-menu__item
+						  a(href="#") Services
+						li.footer-menu__item
+						  a(href="#") Blog
+						li.footer-menu__item
+						  a(href="#") Contact Us
+						-->
 					</menu>
-					<div class="footer__columns">
+					<div id="contact" class="footer__columns">
 						<div class="footer__col">
 							<div class="footer__item">
 								<h4>Our adress</h4>
@@ -277,7 +295,7 @@
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery-migrate-1.4.1.min.js"></script>
 		<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 		<script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
-		<script src="bower_components/jquery.mobilemenu/jquery.mobilemenu.js"></script>
+		<script src="bower_components/jquery-navScroll/jquery.navScroll.js"></script>
 		<!--script(src="src/js/menu.js" type="text/javascript")-->
 		<script src="src/js/index.js" type="text/javascript"></script>
 		<!--link(href="styles/mislider.css" rel="stylesheet" type="text/css")-->

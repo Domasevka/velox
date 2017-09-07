@@ -10,14 +10,14 @@ html(lang='en')
     //link(href="bower_components/slick-carousel/slgick/slick.css", rel="stylesheet", type="text/css")
     //link(href="styles/mislider.css" rel="stylesheet" type="text/css")
   body.js-body
-    #mySidenav.sidenav
+    //#mySidenav.sidenav
       a.closebtn(href='javascript:void(0)', onclick='closeNav()') &times;
       a(href='#') Services
       a(href='#') Portfolio
       a(href='#') Testimonials
       a(href='#') About
-      a(href='#') Contact
-    span(style='font-size:30px;cursor:pointer', onclick='openNav()') &#9776;
+      a(href='#contact') Contact
+    //span.sidenav-btn(onclick='openNav()') &#9776;
       //a(href="#").link
         +icon('bar-menu','gray_mod')
     header.page-header
@@ -26,7 +26,7 @@ html(lang='en')
           .page-header__container
             a.page-header__logo(href="#")
               img(src="src/img/logo.png" width="130" height="38" alt="Velox")
-            nav.main-nav.main-nav--closed
+            //nav.main-nav.main-nav--closed
               .main-nav__wrapper
                 ul.main-nav__list
                   li.main-nav__item.main-nav__item--active
@@ -40,22 +40,20 @@ html(lang='en')
                   li.main-nav__item
                     a.main-nav__item-link(href="#") Contact
 
-              //a(href="#").link
-                +icon('bar-menu','gray_mod')
-              //+icon('bar-menu','gray_mod')
-            //nav
-              ul
-                li
-                  a(href="#") Services
-                li
-                  a(href="#") Portfolio
-                li
-                  a(href="#") Testimonials
-                li
-                  a(href="#") About
-                li
-                  a(href="#") Contact
-              //+icon('bar-menu','gray_mod')
+            nav.nav
+              .nav-mobile Click
+                ul
+                  li
+                    a(href="#") Services
+                  li
+                    a(href="#") Portfolio
+                  li
+                    a(href="#") Testimonials
+                  li
+                    a(href="#") About
+                  li
+                    a(href="#contact") Contact
+                //+icon('bar-menu','gray_mod')
           .page-header__title
             h1 Velox One Page Template
             h3 Clean, Responsive, customizable one page template
@@ -66,37 +64,17 @@ html(lang='en')
         header.services__header
           h2.title.title_line Our services
         .services__list
-          .services__item
-            .services__icon-box
-              img.services__icon(src='img/services-icon.svg', alt="")
-            h6.services__title Logo design
-            p.services__text.
-              Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          .services__item
-            .services__icon-box
-              img.services__icon(src='img/services-icon.svg', alt="")
-            h6.services__title Web design
-            p.services__text.
-              Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          .services__item
-            .services__icon-box
-              img.services__icon(src='img/services-icon.svg', alt="")
-            h6.services__title Branding
-            p.services__text.
-              Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
-          .services__item
-            .services__icon-box
-              img.services__icon(src='src/img/services_illustrations.svg', alt="illustrations")
-            h6.services__title Illustrations
-            p.services__text.
-              Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+          +services ("services_illustrations", "Logo design", "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.")
+          +services ("services_illustrations", "Web design", "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.")
+          +services ("services_illustrations", "Branding", "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.")
+          +services ("services_illustrations", "Illustrations", "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.")
     section.portfolio
       .portfolio-wrap
         .container
           header.portfolio__header
             h2.portfolio__title.title_line Portfolio
           menu.portfolio__menu
-            ul.portfolio__list
+            //ul.portfolio__list
               li.portfolio__item
                 a(href="#").portfolio__item-link All
               li.portfolio__item
@@ -215,7 +193,7 @@ html(lang='en')
         .container
           menu.footer-menu
             a.footer-menu__link(href="#") Contact Us
-            ul.footer-menu__list
+            //ul.footer-menu__list
               li.footer-menu__item.footer-menu__item--active
                 a(href="#") Home
               li.footer-menu__item
@@ -226,7 +204,7 @@ html(lang='en')
                 a(href="#") Blog
               li.footer-menu__item
                 a(href="#") Contact Us
-          .footer__columns
+          .footer__columns#contact
             .footer__col
               .footer__item
                 h4 Our adress
@@ -270,7 +248,7 @@ html(lang='en')
     script( type="text/javascript" src="bower_components/jquery/dist/jquery-migrate-1.4.1.min.js")
     script(src="bower_components/slick-carousel/slick/slick.min.js")
     script(src="bower_components/jquery.easing/js/jquery.easing.js")
-    script(src="bower_components/jquery.mobilemenu/jquery.mobilemenu.js")
+    script(src="bower_components/jquery-navScroll/jquery.navScroll.js")
     //script(src="src/js/menu.js" type="text/javascript")
     script(src="src/js/index.js" type="text/javascript")
 
