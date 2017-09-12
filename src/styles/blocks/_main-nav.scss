@@ -39,40 +39,8 @@
   margin-top: 84px;
 }
 
-.main-nav {
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  &__item + &__item {
-    display: inline-block;
-    vertical-align: middle;
-    //letter-spacing: 1px;
-    cursor: pointer;
-    margin-left: 45px;
-    &-link {
-      //padding-left: 30px;
-      //padding-right: 30px;
-      &:hover {
-        transition: color .2s ease-in;
-        color: $color-success;
-      }
-    }
-  }
-  &__item-link {
-    color: $color-secondary;
-  }
-  &--closed {
-    @media (max-width: $md) {
-      display: none;
-    }
-  }
-}
 
-.menu--toggle {
-  display: none;
-}
+
 
 
 

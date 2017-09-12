@@ -9,22 +9,24 @@
 		<!--link(href="styles/mislider.css" rel="stylesheet" type="text/css")-->
 	</head>
 	<body class="js-body">
-		<!--#mySidenav.sidenav
-		a.closebtn(href='javascript:void(0)', onclick='closeNav()') &times;
-		a(href='#') Services
-		a(href='#') Portfolio
-		a(href='#') Testimonials
-		a(href='#') About
-		a(href='#contact') Contact
-		-->
-		<!--span.sidenav-btn(onclick='openNav()') &#9776;
-		//a(href="#").link
-		  +icon('bar-menu','gray_mod')
-		-->
 		<header class="page-header">
 			<div class="page-header__banner">
 				<div class="container">
 					<div class="page-header__container"><a href="#" class="page-header__logo"><img src="src/img/logo.png" width="130" height="38" alt="Velox"></a>
+						<nav class="main-nav">
+							<div class="main-nav__wrapper">
+								<svg class="icon icon-bar-menu gray_mod">
+									<use xlink:href="src/i/sprite/sprite.svg#bar-menu"></use>
+								</svg>
+							</div>
+							<ul class="main-nav__list">
+								<li class="main-nav__item"><a href="#services" class="main-nav__item-link">Services</a></li>
+								<li class="main-nav__item"><a href="#portfolio" class="main-nav__item-link">Portfolio</a></li>
+								<li class="main-nav__item"><a href="#testimonials" class="main-nav__item-link">Testimonials</a></li>
+								<li class="main-nav__item"><a href="#about" class="main-nav__item-link">About</a></li>
+								<li class="main-nav__item"><a href="#contact" class="main-nav__item-link">Contact</a></li>
+							</ul>
+						</nav>
 						<!--nav.main-nav.main-nav--closed
 						.main-nav__wrapper
 						  ul.main-nav__list
@@ -38,20 +40,7 @@
 						      a.main-nav__item-link(href="#") About
 						    li.main-nav__item
 						      a.main-nav__item-link(href="#") Contact
-						
 						-->
-						<nav class="nav">
-							<div class="nav-mobile">Click
-								<ul>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Portfolio</a></li>
-									<li><a href="#">Testimonials</a></li>
-									<li><a href="#">About</a></li>
-									<li><a href="#contact">Contact</a></li>
-								</ul>
-								<!--+icon('bar-menu','gray_mod')-->
-							</div>
-						</nav>
 					</div>
 					<div class="page-header__title">
 						<h1>Velox One Page Template</h1>
@@ -61,7 +50,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="services">
+		<section id="services" class="services">
 			<div class="container">
 				<header class="services__header">
 					<h2 class="title title_line">Our services</h2>
@@ -90,7 +79,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="portfolio">
+		<section id="portfolio" class="portfolio">
 			<div class="portfolio-wrap">
 				<div class="container">
 					<header class="portfolio__header">
@@ -146,7 +135,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="brands">
+		<section id="testimonials" class="brands">
 			<div class="container">
 				<header class="brands__header">
 					<h2 class="brands__title title_line">Recent Brands we’ve worked with</h2>
@@ -161,7 +150,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="testimonials">
+		<section id="about" class="testimonials">
 			<div class="testimonials-wrap">
 				<div class="container">
 					<header class="testimonials__header">
@@ -212,7 +201,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
+		<footer id="contact" class="footer">
 			<div class="footer-wrap">
 				<div class="container">
 					<menu class="footer-menu"><a href="#" class="footer-menu__link">Contact Us</a>
@@ -229,7 +218,7 @@
 						  a(href="#") Contact Us
 						-->
 					</menu>
-					<div id="contact" class="footer__columns">
+					<div class="footer__columns">
 						<div class="footer__col">
 							<div class="footer__item">
 								<h4>Our adress</h4>

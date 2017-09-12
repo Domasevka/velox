@@ -106,14 +106,27 @@ $(document).ready(function () {
 //mobile menu
 //bower install jquery-nav-scroll
 
-    $('.nav').navScroll({
+    $('.main-nav').navScroll({
         mobileDropdown: true,
-        mobileBreakpoint: 768
+        mobileBreakpoint: 768,
+        scrollSpy: true,
+        onScrollStart: function() {
+            $scrollStatus.show();
+            $scrollStatus.text('Started scrolling');
+        },
+        onScrollEnd: function() {
+            $scrollStatus.text('Scrolling ended');
+            setTimeout(function() {
+                $scrollStatus.fadeOut(200);
+            }, 1000);
+        }
     });
-
-    $('.nav').on('click', '.nav-mobile', function (e) {
+    $('.click-me').navScroll({
+        navHeight: 0
+    });
+    $('.main-nav').on('click', '.main-nav__wrapper', function (e) {
         e.preventDefault();
-        $('.nav ul').slideToggle('fast');
+        $('.main-nav__list').slideToggle('fast');
     });
 
 

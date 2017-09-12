@@ -828,42 +828,6 @@ sub {
   margin-top: 84px;
 }
 
-.main-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.main-nav__item + .main-nav__item {
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-  margin-left: 45px;
-}
-
-.main-nav__item + .main-nav__item-link:hover {
-  transition: color .2s ease-in;
-  color: #00a5ff;
-}
-
-.main-nav__item-link {
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .main-nav--closed {
-    display: none;
-  }
-}
-
-.menu--toggle {
-  display: none;
-}
-
 .services {
   margin: 70px 0 90px;
 }
@@ -1780,68 +1744,163 @@ input[type="submit"] {
   display: none;
 }
 
-.sidenav {
-  display: none;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #3b404c;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .sidenav {
-    display: block;
-  }
-}
-
-.sidenav-btn {
-  color: black;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
-
-@media (max-width: 768px) {
-  .sidenav-btn {
-    display: block;
-  }
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+/** {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}*/
+/*html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}*/
+/*body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.3;
+  -webkit-font-smoothing:antialiased;
+  padding-top: 50px;
+}*/
+/*a {
+  color: #27677c;
   text-decoration: none;
-  font-size: 25px;
-  color: #fff;
+}
+
+a:hover {
+  color: #1a4d7b;
+}
+
+a:visited {
+  color: #27677c;
+}*/
+/*section {
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 30px;
+
+}*/
+nav {
+  z-index: 10;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  text-align: left;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+}
+
+nav li a {
   display: block;
-  transition: 0.3s;
+  padding: 0 40px;
 }
 
-.sidenav a:hover {
-  background-color: #00a5ff;
+.nav li a.active {
+  color: #FFF;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  font-size: 36px;
+.main-nav__wrapper {
+  display: none;
+  font-weight: bold;
+  width: 100%;
 }
 
-/*
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.click-me {
+  width: 150px;
+  height: 30px;
+  background: #435AB8;
+  color: white;
+  text-align: center;
+  line-height: 30px;
 }
-*/
+
+.click-me a {
+  display: block;
+  color: white;
+}
+
+.scroll-status {
+  background-color: black;
+  border-top-left-radius: 4px;
+  bottom: 0;
+  color: white;
+  display: none;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+}
+
+/*.main-nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  &__item + &__item {
+    display: inline-block;
+    vertical-align: middle;
+    //letter-spacing: 1px;
+    cursor: pointer;
+    margin-left: 45px;
+    &-link {
+      //padding-left: 30px;
+      //padding-right: 30px;
+      &:hover {
+        transition: color .2s ease-in;
+        color: $color-success;
+      }
+    }
+  }
+  &__item-link {
+    color: $color-secondary;
+    &:hover {
+      color: $color-success--light;
+    }
+  }
+}*/
+@media (max-width: 768px) {
+  .main-nav__list {
+    display: none;
+    background-color: #3b404c;
+    margin-left: -30px;
+  }
+  .main-nav__item {
+    width: 100%;
+  }
+  .main-nav__item + .main-nav__item {
+    cursor: pointer;
+  }
+  .main-nav__item + .main-nav__item-link:hover {
+    transition: color .2s ease-in;
+    color: #00a5ff;
+  }
+  .main-nav__item + .main-nav__item-link:active {
+    background-color: #00a5ff;
+  }
+  .main-nav__wrapper {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    display: block !important;
+  }
+}
+
 .services {
   position: relative;
 }
